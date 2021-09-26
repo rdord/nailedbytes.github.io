@@ -35,15 +35,19 @@
           '. . . . . . . . . . . . . . . . . . . . ' '. . . . . . . . . . . . . . . . . . . . ';
       }
 
-      ul.leaders span:first-child {
+      ul.leaders .name {
         padding-right: 0.33em;
         background: var(--bg-color);
       }
 
-      ul.leaders span + span {
+      ul.leaders .price {
         float: right;
         padding-left: 0.33em;
         background: var(--bg-color);
+      }
+
+      .text-justify {
+        text-align: justify;
       }
 
       .bottom-space {
@@ -52,10 +56,6 @@
 
       p.bottom-space {
         padding-bottom: 8px;
-      }
-
-      .text-justify {
-        text-align: justify;
       }
 
       .no-top-space {
@@ -74,7 +74,7 @@
       <h1>MANIKIRA</h1>
 
       <ul class="leaders bottom-space">
-        <li class="dots"><span>KLASIČNA MANIKIRA</span> <span>15€</span></li>
+        <li class="dots"><span class="name">KLASIČNA MANIKIRA</span> <span class="price">15€</span></li>
       </ul>
       <p class="text-justify">
         ženska ali moška naravna manikira vsebuje oblikovanje in urejanje nohtov, urejanje obnohtne kožice, nego s
@@ -83,92 +83,107 @@
 
       <h1>PERMANENTNO LAKIRANJE</h1>
       <ul class="leaders bottom-space">
-        <li class="dots"><span>PERMANENTNO LAKIRANJE</span> <span>25€</span></li>
-        <li class="dots"><span>KOREKTURA PERM LAKIRANJA (2-4 t)</span> <span>28€</span></li>
-        <li class="dots"><span>KOREKTURA PERM LAKIRANJA (nad 4 t)</span> <span>30€</span></li>
+        <li class="dots"><span class="name">PERMANENTNO LAKIRANJE</span> <span class="price">25€</span></li>
+        <li class="dots"><span class="name">KOREKTURA PERM LAKIRANJA (2-4 t)</span> <span class="price">28€</span></li>
+        <li class="dots">
+          <span class="name">KOREKTURA PERM LAKIRANJA (nad 4 t)</span> <span class="price">30€</span>
+        </li>
       </ul>
       <ul class="leaders bottom-space">
-        <li class="dots"><span>ODSTRANJEVANJE PERM LAKIRANJA</span> <span>10€</span></li>
-        <li class="dots"><span>ODSTRANJEVANJE IN NOV NANOS</span> <span>+5€</span></li>
-        <li class="dots"><span>POPRAVILO NOHTA</span> <span>+2,5€</span></li>
-        <li class="dots"><span>POPRAVILO POŠKODOVANEGA NOHTA</span> <span>+3,5€</span></li>
+        <li class="dots"><span class="name">ODSTRANJEVANJE PERM LAKIRANJA</span> <span class="price">10€</span></li>
+        <li class="dots"><span class="name">ODSTRANJEVANJE IN NOV NANOS</span> <span class="price">+5€</span></li>
+        <li class="dots"><span class="name">POPRAVILO NOHTA</span> <span class="price">+2,5€</span></li>
+        <li class="dots"><span class="name">POPRAVILO POŠKODOVANEGA NOHTA</span> <span class="price">+3,5€</span></li>
       </ul>
 
       <h1>GELIRANJE IN PODALJŠEVANJE</h1>
       <ul class="leaders bottom-space">
         <li><span>PODALJŠEVANJE NOHTOV SALONSKIH OBLIK (OVAL/MANDELJ/KOCKA)</span></li>
-        <li class="dots"><span>DOLŽINA S</span> <span>35€</span></li>
-        <li class="dots"><span>KOREKTURA (2-4 t)</span> <span>30€</span></li>
-        <li class="dots"><span>KOREKTURA (nad 4 t)</span> <span>33€</span></li>
+        <li class="dots"><span class="name">DOLŽINA S</span> <span class="price">35€</span></li>
+        <li class="dots"><span class="name">KOREKTURA (2-4 t)</span> <span class="price">30€</span></li>
+        <li class="dots"><span class="name">KOREKTURA (nad 4 t)</span> <span class="price">33€</span></li>
       </ul>
       <ul class="leaders bottom-space">
         <li>PODALJŠEVANJE NOHTOV SALONSKIH OBLIK (OVAL/MANDELJ/KOCKA)</li>
-        <li class="dots"><span>DOLŽINA M</span> <span>38€</span></li>
-        <li class="dots"><span>KOREKTURA (2-4 t)</span> <span>33€</span></li>
-        <li class="dots"><span>KOREKTURA (nad 4 t)</span> <span>36€</span></li>
+        <li class="dots"><span class="name">DOLŽINA M</span> <span class="price">38€</span></li>
+        <li class="dots"><span class="name">KOREKTURA (2-4 t)</span> <span class="price">33€</span></li>
+        <li class="dots"><span class="name">KOREKTURA (nad 4 t)</span> <span class="price">36€</span></li>
       </ul>
       <ul class="leaders bottom-space">
         <li><span>PODALJŠEVANJE NOHTOV EKSTREMNIH OBLIK ALI DOLŽIN (STILETTO/COFFIN)</span></li>
-        <li class="dots"><span>DOLŽINA L/XL</span> <span>(L) 45€ (XL) 48€</span></li>
-        <li class="dots"><span>KOREKTURA (2-4 t)</span> <span>(L) 38€ (XL) 41€</span></li>
-        <li class="dots"><span>KOREKTURA (nad 4 t)</span> <span>(L) 43€ (XL) 46€</span></li>
+        <li class="dots"><span class="name">DOLŽINA L/XL</span> <span class="price">(L) 45€ (XL) 48€</span></li>
+        <li class="dots"><span class="name">KOREKTURA (2-4 t)</span> <span class="price">(L) 38€ (XL) 41€</span></li>
+        <li class="dots"><span class="name">KOREKTURA (nad 4 t)</span> <span class="price">(L) 43€ (XL) 46€</span></li>
       </ul>
       <ul class="leaders bottom-space">
-        <li class="dots"><span>GELIRANJE NARAVNIH NOHTOV</span></li>
-        <li class="dots"><span>DOLŽINA S</span> <span>30€</span></li>
-        <li class="dots"><span>DOLŽINA M</span> <span>33€</span></li>
-        <li class="dots"><span>DOLŽINA L/XL</span> <span>(L) 36€ (XL) 38€</span></li>
+        <li class="dots"><span class="name">GELIRANJE NARAVNIH NOHTOV</span></li>
+        <li class="dots"><span class="name">DOLŽINA S</span> <span class="price">30€</span></li>
+        <li class="dots"><span class="name">DOLŽINA M</span> <span class="price">33€</span></li>
+        <li class="dots"><span class="name">DOLŽINA L/XL</span> <span class="price">(L) 36€ (XL) 38€</span></li>
       </ul>
       <ul class="leaders bottom-space">
-        <li class="dots"><span>ODSTRANJEVANJE GELIRANIH NOHTOV</span> <span>15€</span></li>
-        <li class="dots"><span>ODSTRANJEVANJE IN NOVO GELIRANJE</span> <span>+5€</span></li>
-        <li class="dots"><span>ODSTRANJEVANJE IN NOVO PODALJŠEVANJE</span> <span>+5€</span></li>
-        <li class="dots"><span>POPRAVILO NOHTA</span> <span>+3,5€</span></li>
-        <li class="dots"><span>POPRAVILO POŠKODOVANEGA NOHTA</span> <span>+4,5€</span></li>
+        <li class="dots"><span class="name">ODSTRANJEVANJE GELIRANIH NOHTOV</span> <span class="price">15€</span></li>
+        <li class="dots"><span class="name">ODSTRANJEVANJE IN NOVO GELIRANJE</span> <span class="price">+5€</span></li>
+        <li class="dots">
+          <span class="name">ODSTRANJEVANJE IN NOVO PODALJŠEVANJE</span> <span class="price">+5€</span>
+        </li>
+        <li class="dots"><span class="name">POPRAVILO NOHTA</span> <span class="price">+3,5€</span></li>
+        <li class="dots"><span class="name">POPRAVILO POŠKODOVANEGA NOHTA</span> <span class="price">+4,5€</span></li>
       </ul>
 
       <h1>POSLIKAVE IN DODATKI</h1>
       <ul class="leaders bottom-space">
-        <li class="dots"><span>GRAJENA FRANCOSKA</span> <span>1 noht/+2,5€ - vsi/+10€</span></li>
-        <li class="dots"><span>GRAJENE BLEŠČICE</span> <span>1 noht/+2,5€ - vsi/+10€</span></li>
+        <li class="dots">
+          <span class="name">GRAJENA FRANCOSKA</span> <span class="price">1 noht/+2,5€ - vsi/+10€</span>
+        </li>
+        <li class="dots">
+          <span class="name">GRAJENE BLEŠČICE</span> <span class="price">1 noht/+2,5€ - vsi/+10€</span>
+        </li>
       </ul>
       <ul class="leaders">
         <li><span>ROČNE POSLIKAVE, FOLIJE IN DODATKI</span></li>
-        <li class="dots"><span>*PREPROSTO</span> <span>1 noht/+0,50€-1€ - vsi/5-8€</span></li>
-        <li class="dots"><span>**ZAHTEVNEJŠE</span> <span>1 noht/+1,5-2€ - vsi/8-10€</span></li>
+        <li class="dots">
+          <span class="name">*PREPROSTO</span> <span class="price">1 noht/+0,50€-1€ - vsi/5-8€</span>
+        </li>
+        <li class="dots">
+          <span class="name">**ZAHTEVNEJŠE</span> <span class="price">1 noht/+1,5-2€ - vsi/8-10€</span>
+        </li>
       </ul>
-      <p class="bottom-space">
+      <p class="text-justify bottom-space">
         *marble, enobarvne vijugice, folije, itd.<br />
         **plamenčki, večbarvne vijugice, itd.
       </p>
       <ul class="leaders bottom-space">
-        <li class="dots"><span>KRISTALČKI, OKRASKI</span> <span>0,25€ - 0,50€ - 0,75€</span></li>
-        <li class="dots"><span>SWAROVSKI SS3-SS5</span> <span>1 kos/+0,25-0,50€</span></li>
-        <li class="dots"><span>SWAROVSKI SS8-SS12</span> <span>1 kos/0,75-1€</span></li>
-        <li class="dots"><span>SWAROVSKI SS16+</span> <span>1 kos/1,5€-3€</span></li>
+        <li class="dots">
+          <span class="name">KRISTALČKI, OKRASKI</span> <span class="price">0,25€ - 0,50€ - 0,75€</span>
+        </li>
+        <li class="dots"><span class="name">SWAROVSKI SS3-SS5</span> <span class="price">1 kos/+0,25-0,50€</span></li>
+        <li class="dots"><span class="name">SWAROVSKI SS8-SS12</span> <span class="price">1 kos/0,75-1€</span></li>
+        <li class="dots"><span class="name">SWAROVSKI SS16+</span> <span class="price">1 kos/1,5€-3€</span></li>
       </ul>
 
       <h1>OBRVI</h1>
       <ul class="leaders bottom-space">
-        <li class="dots"><span>LAMINACIJA</span> <span>45€</span></li>
-        <li class="dots"><span>OBLIKOVANJE Z VOSKOM IN PINCETO</span> <span>15-18€</span></li>
+        <li class="dots"><span class="name">LAMINACIJA</span> <span class="price">45€</span></li>
+        <li class="dots">
+          <span class="name">OBLIKOVANJE Z VOSKOM IN PINCETO</span> <span class="price">15-18€</span>
+        </li>
       </ul>
 
       <h1>DARILNI BONI</h1>
-      ›
       <ul class="leaders bottom-space">
-        <li class="dots"><span>V VREDNOSTI</span> <span>15€</span></li>
-        <li class="dots"><span></span> <span>20€</span></li>
-        <li class="dots"><span></span> <span>25€</span></li>
+        <li class="dots"><span class="name">V VREDNOSTI</span> <span class="price">15€</span></li>
+        <li class="dots"><span class="name"></span> <span class="price">20€</span></li>
+        <li class="dots"><span class="name"></span> <span class="price">25€</span></li>
       </ul>
-      <p>
+      <p class="text-justify">
         zamenjava bona za denar ni možna. možno je le doplačilo in izbria druge storitve v drugi vrednosti. darilni bon
         je veljaven 6 mesecev od nakupa.
       </p>
       <br />
 
-      <p class="no-bottom-space">plačilo je možno le z gotovino.</p>
-      <p class="no-top-space">pridržujem si pravico do spremembe cenika. cenik velja od 1.10.2021</p>
+      <p class="text-justify no-bottom-space">plačilo je možno le z gotovino.</p>
+      <p class="text-justify no-top-space">pridržujem si pravico do spremembe cenika. cenik velja od 1.10.2021</p>
     </div>
     <script></script>
   </body>
